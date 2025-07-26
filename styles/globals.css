@@ -1,0 +1,32 @@
+/* Tailwind CSSのベース、コンポーネント、ユーティリティスタイルをインポート */
+@import "tailwindcss";
+
+/* Google FontsからInterフォントをインポート */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* HTMLとBodyの基本スタイル */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* Interフォントをデフォルトに設定 */
+  font-family: 'Inter', sans-serif;
+  /* 全体の背景色を淡い生成り色に設定 */
+  background-color: #ecf0f1; /* koku-light */
+  /* テキストのデフォルト色を濃い墨色に設定 */
+  color: #2c3e50; /* koku-dark */
+  /* アンチエイリアスを適用してテキストを滑らかに表示 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* リンクのスタイルをリセット */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* すべての要素にbox-sizing: border-boxを適用 */
+* {
+  box-sizing: border-box;
+}
